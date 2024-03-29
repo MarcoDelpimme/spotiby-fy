@@ -113,10 +113,18 @@ ul {
   color: #282828 !important;
 }
 
+#playBtn {
+  width: 30px;
+}
+
+#pauseBtn {
+  width: 30px;
+}
+
 #progress {
   color: white;
   background-color: #414141;
-  height: 3px;
+  height: 6px;
 }
 
 @media screen and (min-width: 1200px) {
