@@ -1,8 +1,16 @@
 import { Row, Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Player = () => {
+  const selectedSong = useSelector((state) => {
+    return state.data;
+  });
+
   return (
     <Row className="h-100">
+      <audio controls>
+        <source src={`${selectedSong.preview}`} type="audio/mpeg"></source>
+      </audio>
       <Col lg={{ span: 10, offset: 2 }}>
         <Row className="h-100 flex-column justify-content-center align-items-center">
           <Col xs={6} md={4} className="playerControls">
